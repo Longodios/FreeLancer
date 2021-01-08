@@ -1,0 +1,94 @@
+/** Globales **/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** 1 rem = 10px **/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Redressed', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Redressed', cursive;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/** UTILIDADES **/
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+/** NAVEGACION **/
+
+.barra {
+    background-color: #33bfff;
+    line-height: 6rem;
+    padding: 1rem;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navegacion a {
+    font-size: 3rem;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion a:hover {
+    background-color: yellow;
+    color: black;
+}
