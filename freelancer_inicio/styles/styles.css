@@ -29,15 +29,15 @@ h3 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 h2 {
-    font-size: 3.1rem;
+    font-size: 4.1rem;
 }
 
 h3 {
-    font-size: 3.2rem;
+    font-size: 3.3rem;
 }
 
 a {
@@ -63,6 +63,10 @@ a {
 
 .w-100 {
     flex: 0 0 100%;
+}
+
+.margin-bot {
+    margin-bottom: 2rem;
 }
 
 
@@ -122,27 +126,33 @@ a {
 
 .side-header h1 {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     line-height: 5rem;
     color: #fff;
 }
 
 .side-header p {
     color: #fff;
+    font-size: 1.9rem;
 }
 
 .boton {
     background-color: #33bfff;
-    padding: 1rem;
+    padding: .9rem;
     border-radius: 1rem;
     color: #fff;
     text-transform: uppercase;
-    width: 40%;
+    width: 43%;
     text-align: center;
+    cursor: pointer;
 }
 
 
 /** MAIN **/
+
+.contenedor h1 {
+    margin-top: 10rem;
+}
 
 .servicio {
     display: flex;
@@ -189,11 +199,16 @@ a {
 
 /** FORMULARIO **/
 
+.contacto h2 {
+    margin: 5rem 0 4rem 0;
+}
+
 .formulario {
     background-color: grey;
     padding: 2rem;
     border-radius: 1rem;
     scroll-snap-align: center;
+    margin: 2rem;
 }
 
 .formulario legend {
@@ -203,19 +218,30 @@ a {
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
 
 .edicion-form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    line-height: 4rem;
 }
 
 .edicion-form label {
     color: #fff;
-    margin-bottom: 2rem;
-    display: block;
     font-weight: 700;
+}
+
+.edicion-form {
+    margin-bottom: 2rem;
 }
 
 .campo {
@@ -225,17 +251,58 @@ a {
     margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+    .campo {
+        width: 44%;
+    }
+}
+
 .campo input[type="text"],
 .campo input[type="tel"],
 .campo input[type="mail"],
-.campo textarea {
-    width: 75%;
+.campo textarea[name="mensaje"] {
+    width: 80%;
     border-radius: 1rem;
     padding: 1rem;
 }
 
+@media (min-width: 768px) {
+    .campo label[type="tel"] {
+        flex: 0 0 90px;
+    }
+    .campo label {
+        flex: 0 0 90px;
+    }
+}
+
+@media (min-width: 768px) {
+    .campo input[type="text"],
+    input[type="tel"] {
+        flex: 1;
+    }
+}
+
 .enviar {
-    width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin: 0 2.5rem 0 0;
+}
+
+.btn-secundario {
+    background-color: #33bfff;
+    width: 25%;
+    border-radius: 1rem;
+    padding: .9rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+/** FOOTER **/
+
+.final-pag p {
+    font-size: 2rem;
+    font-weight: 1rem;
+    font-style: italic;
 }
